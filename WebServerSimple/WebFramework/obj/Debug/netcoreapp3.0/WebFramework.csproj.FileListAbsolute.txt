@@ -6,3 +6,11 @@
 /Users/julianmosi/Documents/School/4.Klasse/POS/WebServerSimple_Vorlage/WebServerSimple/WebFramework/obj/Debug/netcoreapp3.0/WebFramework.AssemblyInfo.cs
 /Users/julianmosi/Documents/School/4.Klasse/POS/WebServerSimple_Vorlage/WebServerSimple/WebFramework/obj/Debug/netcoreapp3.0/WebFramework.dll
 /Users/julianmosi/Documents/School/4.Klasse/POS/WebServerSimple_Vorlage/WebServerSimple/WebFramework/obj/Debug/netcoreapp3.0/WebFramework.pdb
+F:\Documents\School\4.Klasse\POS\WebServerSimple\WebServerSimple\WebFramework\bin\Debug\netcoreapp3.0\WebFramework.deps.json
+F:\Documents\School\4.Klasse\POS\WebServerSimple\WebServerSimple\WebFramework\bin\Debug\netcoreapp3.0\WebFramework.dll
+F:\Documents\School\4.Klasse\POS\WebServerSimple\WebServerSimple\WebFramework\bin\Debug\netcoreapp3.0\WebFramework.pdb
+F:\Documents\School\4.Klasse\POS\WebServerSimple\WebServerSimple\WebFramework\obj\Debug\netcoreapp3.0\WebFramework.csprojAssemblyReference.cache
+F:\Documents\School\4.Klasse\POS\WebServerSimple\WebServerSimple\WebFramework\obj\Debug\netcoreapp3.0\WebFramework.AssemblyInfoInputs.cache
+F:\Documents\School\4.Klasse\POS\WebServerSimple\WebServerSimple\WebFramework\obj\Debug\netcoreapp3.0\WebFramework.AssemblyInfo.cs
+F:\Documents\School\4.Klasse\POS\WebServerSimple\WebServerSimple\WebFramework\obj\Debug\netcoreapp3.0\WebFramework.dll
+F:\Documents\School\4.Klasse\POS\WebServerSimple\WebServerSimple\WebFramework\obj\Debug\netcoreapp3.0\WebFramework.pdb

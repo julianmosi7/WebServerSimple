@@ -165,10 +165,20 @@ namespace WebFramework
             //Home/Index
             var split = route.Split('/');
             var controller = split[0];
-            var action = split[1];
-            Assembly assembly = Assembly.GetExecutingAssembly();
+            var action = "Index";
+
+            try
+            {
+                if (split[1] != null) action = split[1];               
+            }catch(IndexOutOfRangeException ex)
+            {
+                ex.ToString();
+            }
+            
+            Assembly assembly = Assembly.GetEntryAssembly();            
             Type type = assembly.GetType($"WebServerSimple.Controllers.{controller}Controller");
-            object instance = Activator.CreateInstance(type, null);
+            object instance = Activator.CreateInstance(type);
+            Console.WriteLine(action);
             MethodInfo methodInfo = type.GetMethod(action);
             object result = methodInfo.Invoke(instance, null);
             return result as string;

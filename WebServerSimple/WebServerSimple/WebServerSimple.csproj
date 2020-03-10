@@ -8,7 +8,6 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Services\" />
-    <Folder Include="Views\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
@@ -21,6 +20,12 @@
     <None Remove="Controllers\NortwindController.css" />
   </ItemGroup>
   <ItemGroup>
+    <None Update="Views\Northwind\employees.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Northwind\products.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="wwwroot\arrow_down.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

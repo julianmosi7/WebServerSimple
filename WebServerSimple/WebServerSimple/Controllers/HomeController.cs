@@ -3,38 +3,30 @@ using System.IO;
 
 namespace WebServerSimple.Controllers
 {
-    public class HomeController
+    public class HomeController : WebFramework.ControllerBase
     {
+        
         public string Index()
         {
-            Console.WriteLine("HomeController:Index");
-            string layoutFile = $@"./Views/Home/index.html";
-            Console.WriteLine(layoutFile);
+            Console.WriteLine("-----");
+            Console.WriteLine(Root);
+            Console.WriteLine("-----");
 
-            if (!File.Exists(layoutFile)) return null;
-            string layout = File.ReadAllText(layoutFile);
-            string contents = File.ReadAllText($@"./Views/Home/index.html");
-            string html = layout.Replace("@RenderBody()", contents);
-            return html;
+            var model = new
+            {
+                Hook1 = "This is the contents for hook1",
+                Hook2 = "Found hook2 here"
+            };
+
+            return View(nameof(Index), "Home", model);
         }
 
         public string Dummy()
         {
-            Console.WriteLine("HomeController:Dummy");
-            string layoutFile = $@"./Views/Home/Layout.html";
-            Console.WriteLine(layoutFile);
-
-            if (!File.Exists(layoutFile)) return null;
-            string layout = File.ReadAllText(layoutFile);
-            string contents = "<ul>";
-            for (int i = 0; i < 5; i++)
-            {
-                contents += $"<li>{i}</li>";
-
-            }
-            contents += "</ul>";
-            string html = layout.Replace("@RenderBody()", contents);
-            return html;
+            Console.WriteLine("-----");
+            Console.WriteLine(Root);
+            Console.WriteLine("-----");
+            return View("Dummy", "Home");
         }
     }
 }
